@@ -1,7 +1,7 @@
 # heavymath
 Django Ninja based API for calculating intensive mathematical operations
 
-![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/migueltorrescosta/heavymath)
+![Website online](https://img.shields.io/website?down_color=red&down_message=offline&style=plastic&up_color=green&up_message=online&url=https%3A%2F%2Fheavymath.onrender.com%2Fapi%2Fdocs)
 ![GitHub last commit](https://img.shields.io/github/last-commit/migueltorrescosta/heavymath)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/migueltorrescosta/heavymath)
 ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/migueltorrescosta/heavymath/main)
@@ -16,14 +16,15 @@ Django Ninja based API for calculating intensive mathematical operations
 
 # 📚 Tech Stack
 
-- Django Ninja
-
+- [Django Ninja](https://django-ninja.rest-framework.com/)
+- [Poetry](https://python-poetry.org/) for Package management
+- Deployed using [Render](render.com)
 
 # 🏌 Development setup
 
 ```python
-pip install requirements.txt
-python manage.py runserver
+poetry install
+poetry run ./manage.py runserver
 ```
 
 ## 🧪 Tests
