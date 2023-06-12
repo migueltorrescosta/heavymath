@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "heavymath"
+version = "0.1.0"
+description = "RESTful API for computationally expensive mathematical calculations"
+authors = ["Miguel Torres Costa <miguelptcosta1995@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+asgiref = "^3.7.2"
+asyncio = "^3.4.3"
+django = "^4.2.2"
+django-ninja = "^0.22.2"
+pydantic = "^1.10.9"
+sqlparse = "^0.4.4"
+typing-extensions = "^4.6.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

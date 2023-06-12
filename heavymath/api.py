@@ -27,7 +27,7 @@ class CollatzSequenceSchema(Schema):
 
 @api.get(
     path="/healthz",
-    summary="Endpoint used to ensure the healthy state of this API",
+    summary="Healthz",
     response={200: None})
 def health(request):
     return 200, None
