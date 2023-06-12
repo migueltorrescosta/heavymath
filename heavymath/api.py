@@ -30,7 +30,7 @@ class CollatzSequenceSchema(Schema):
     summary="Healthz",
     response={200: None})
 def health(request):
-    return 200, None
+    return 200, "Healthy"
 
 
 @api.get(
