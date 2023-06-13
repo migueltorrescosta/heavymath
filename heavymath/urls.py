@@ -16,9 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+
 from .api import api
+from .settings import DEBUG
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
     path("api/", api.urls),
 ]
+
+if DEBUG is False:
+    urlpatterns.append(path("admin/", admin.site.urls))
