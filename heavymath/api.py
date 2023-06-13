@@ -1,7 +1,8 @@
-from ninja import NinjaAPI, Schema
-from .algorithms import simple_factorization, calculate_collatz_sequence
-import asyncio
 from enum import Enum
+
+from ninja import NinjaAPI, Schema
+
+from .algorithms import simple_factorization, calculate_collatz_sequence
 
 api = NinjaAPI()
 
@@ -23,14 +24,6 @@ class CollatzSequenceSchema(Schema):
     sequence: list[int]
     length: int
     terminated: bool
-
-
-@api.get(
-    path="/healthz",
-    summary="Healthz",
-    response={200: None})
-def health(request):
-    return 200, "Healthy"
 
 
 @api.get(
