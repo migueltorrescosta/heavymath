@@ -28,7 +28,8 @@ class CollatzSequenceSchema(Schema):
 
 @api.get(
     path="/factorize",
-    summary="Factorize n",
+    summary="Prime factorization",
+    description="Returns the factors of a number n as a list",
     response=FactorizationSchema)
 def factorize(request, n: int):
     # TODO: Add async support ( 1st algorithm to completion )
@@ -46,7 +47,8 @@ def factorize(request, n: int):
 
 @api.get(
     path="/collatz",
-    summary="Collatz sequence starting at n",
+    summary="Collatz sequence",
+    description="Returns the Collatz sequence starting at n",
     response=CollatzSequenceSchema)
 def collatz(request, n: int, max_length: int = 1000):
     sequence = calculate_collatz_sequence(n, max_length)
